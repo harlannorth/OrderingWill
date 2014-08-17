@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace TestingWill
 {
@@ -14,8 +15,9 @@ namespace TestingWill
 		[TestMethod]
 		public void CanLoadAndIterate()
 		{
-
+			
 			bool matches = true;
+			
 
 			OrderingWill.IndexIterator iterator = new OrderingWill.IndexIterator(@"C:\Users\hnorth\Documents\GitHub\OrderingWill\OrderingWill\TestingWill\Data\HenryIV.csv");
 
@@ -26,8 +28,10 @@ namespace TestingWill
 			int i = 0;
 			do
 			{
-				
-				matches = iterator.GetNext().Word.Equals(allLines[i]);
+				string text = Regex.Replace(allLines[i].Split(";".ToCharArray())[5],@"[""\\]", string.Empty).Trim();
+				string iteratorText = iterator.GetNext().Text;
+
+				matches = iteratorText.Equals(text);
 				i++;
 
 			} while (matches && i < allLines.Count());

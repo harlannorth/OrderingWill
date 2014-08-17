@@ -1,0 +1,4 @@
+C:\Users\hnorth\Documents\GitHub\OrderingWill\OrderingWill\OrderingWill\bin\Debug\OrderingWill.dll
+C:\Users\hnorth\Documents\GitHub\OrderingWill\OrderingWill\OrderingWill\bin\Debug\OrderingWill.pdb
+C:\Users\hnorth\Documents\GitHub\OrderingWill\OrderingWill\OrderingWill\obj\Debug\OrderingWill.dll
+C:\Users\hnorth\Documents\GitHub\OrderingWill\OrderingWill\OrderingWill\obj\Debug\OrderingWill.pdb
