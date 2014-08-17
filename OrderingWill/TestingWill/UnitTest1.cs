@@ -9,8 +9,6 @@ namespace TestingWill
 	public class TestingWill
 	{
 
-
-
 		//sample from http://datahub.io/dataset/william-shakespeare-plays/resource/514d3c17-8469-4ae8-b83f-57678af50735
 		[TestMethod]
 		public void CanLoadAndIterate()
